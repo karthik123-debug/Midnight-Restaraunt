@@ -1,0 +1,1 @@
+export default function Reservation(){ return <section>Reservation</section> }

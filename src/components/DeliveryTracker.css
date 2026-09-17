@@ -1,0 +1,119 @@
+.tracker{
+    position:fixed;
+    inset:0;
+    background:#111;
+    color:white;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    z-index:10001;
+}
+
+.tracker h1{
+    color:#f5b642;
+    font-size:42px;
+    margin-bottom:40px;
+}
+
+.road-container{
+    display:flex;
+    align-items:center;
+    width:85%;
+    max-width:1100px;
+    margin-bottom:40px;
+}
+
+.restaurant,
+.home{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width:140px;
+}
+
+.restaurant{
+    color:#f5b642;
+}
+
+.home{
+    color:#2ecc71;
+}
+
+.restaurant p,
+.home p{
+    margin-top:8px;
+    font-size:18px;
+    font-weight:bold;
+}
+
+.road{
+    flex:1;
+    height:6px;
+    background:#555;
+    border-radius:10px;
+    position:relative;
+    margin:0 20px;
+}
+
+.truck{
+    position:absolute;
+    left:0;
+    top:-55px;
+    transform:translateX(-50%);
+    transition:left 1s linear;
+    z-index:10;
+}
+
+.truck img{
+    width:120px;
+    height:auto;
+    object-fit:contain;
+}
+
+.progress{
+    width:70%;
+    max-width:700px;
+    height:20px;
+    background:#333;
+    border-radius:30px;
+    overflow:hidden;
+}
+
+.fill{
+    height:100%;
+    background:linear-gradient(90deg,#f5b642,#ffcf66);
+    transition:width 1s linear;
+}
+
+.tracker h2{
+    margin-top:30px;
+    font-size:30px;
+}
+
+.status{
+    margin-top:15px;
+    color:#f5b642;
+    font-size:22px;
+    font-weight:bold;
+}
+
+.tracker button{
+    margin-top:35px;
+    padding:15px 40px;
+    border:none;
+    border-radius:35px;
+    background:#f5b642;
+    color:#111;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.tracker button:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 25px rgba(245,182,66,.4);
+}
