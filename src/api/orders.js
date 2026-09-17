@@ -1,5 +1,5 @@
 
-const API_URL = "http://localhost:5000/api/orders";
+const API_URL = "https://midnit-restaraunt.onrender.com/api/orders";
 
 export async function placeOrder(orderData) {
   const response = await fetch(API_URL, {
