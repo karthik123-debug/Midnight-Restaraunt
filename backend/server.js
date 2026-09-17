@@ -14,6 +14,8 @@ app.use(cors({
     "https://midnight-restaraunt.vercel.app"
   ]
 }));
+
+app.use(express.json());
 app.use(express.json());
 
 app.get("/", (req, res) => {
